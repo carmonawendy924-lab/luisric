@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="bg-light text-center p-5">
+
+    <h1 class="mb-4">cantante</h1>
+    <form method="POST">
+        <select name="canciones" >
+            <option value="i">ivan cornejo </option>
+            <option value="h">junior h </option>
+            <option value="n">nata montana</option>
+            <option value="f">fuerza regida </option>
+            <option value="a">ariel camacho</option>
+            <option value="s">chalino sanchez</option>
+            <option value="v">vicente fernandez</option>
+            <option value="l">aleman</option>
+            <option value="k">kevin karl</option>
+            <option value="j">jose jose</option>
+        </select>
+        <button class="btn btn-primary">Enviar</button>
+    </form>
+    
+{% if sal %}
+    <div class="card mt-4 mx-auto" style="width: 30%;">
+        <h5 class="card-title">    {{sal.cancion}}            </h5>
+        <p class="card-text">       {{sal.desc}}           </p>
+    </div>
+{% endif %}
+</body>
+</html>
